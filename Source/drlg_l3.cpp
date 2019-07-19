@@ -791,7 +791,8 @@ void DRLG_L3River()
 	rivercnt = 0;
 	bail = FALSE;
 	trys = 0;
-	/// BUGFIX: pdir is uninitialized, add code `pdir = -1;`
+	/// BUGFIX: pdir is uninitialized, add code `pdir = -1;`(fixed)
+	pdir = -1;
 
 	while (trys < 200 && rivercnt < 4) {
 		bail = FALSE;
